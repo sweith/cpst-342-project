@@ -1,41 +1,187 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Honeymoon in Italy - Home</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+
+        main, body, html {
+            height: 100%;
+        }
+
+        .hero-image {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Images/colleseum.jpeg");
+            height: 50%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+
+        .hero-text {
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+        }
+    </style>
+
+    <!-- Custom styles for this template -->
+    <link href="stylesheet.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <img src="Images/colleseum.jpeg" height="384" alt="Colleseum"/>
-        <h1>Honeymoon in Italy</h1>
-        <p>Welcome visitor!</p>
-        <p>My wife and I recently toured Italy for our honeymoon.</p>
-        <p>Click the links below to explore topics related to our trip.</p>
-        <ul style="list-style-type:square">
-            <li><a href="about.html">About</a></li>
-            <li><a href="attractions.html">Attractions</a></li>
-            <li><a href="cities.html">Cities</a></li>
-            <li><a href="food.html">Food</a></li>
-            <li><a href="hotels.html">Hotels</a></li>
-            <li><a href="itinerary.html">Itinerary</a></li>
+
+<!-- Header -->
+<header class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#">Buongiorno!</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <!--            <li class="nav-item">-->
+            <!--                <a class="nav-link" href="#">Link</a>-->
+            <!--            </li>-->
+            <!--            <li class="nav-item">-->
+            <!--                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>-->
+            <!--            </li>-->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menu</a>
+                <div class="dropdown-menu" aria-labelledby="dropdown01">
+                    <a class="dropdown-item" href="about.html">About</a>
+                    <a class="dropdown-item" href="attractions.html">Attractions</a>
+                    <a class="dropdown-item" href="cities.html">Cities</a>
+                    <a class="dropdown-item" href="food.html">Food</a>
+                    <a class="dropdown-item" href="hotels.html">Hotels</a>
+                    <a class="dropdown-item" href="itinerary.html">Itinerary</a>
+                </div>
+            </li>
         </ul>
-    </header>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+            <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </div>
+</header>
 
-    <main>
-        <h2>Exploring Further</h2>
-        <p>Here are some resources if you're thinking of planning your own Italy trip.</p>
-            <ul style="list-style-type:square">
-                <li><a href="https://en.wikipedia.org/wiki/Italy" target="_blank">Wikipedia</a></li>
-                <li><a href="https://www.accuweather.com/en/it/italy-weather" target="_blank">Weather</a></li>
-                <li><a href="https://www.ricksteves.com/europe/italy" target="_blank">Rick Steve's</a></li>
+<!-- Main -->
+<main role="main" class="container">
 
+    <div class="hero-image">
+        <div class="hero-text">
+            <h1>Welcome!</h1>
+        </div>
+    </div>
+
+    <div class="stylesheet">
+        <h1>Honeymoon in Italy</h1>
+        <p class="lead">Welcome visitor, I'm Steve!
+            My wife and I recently toured Italy for our honeymoon.
+            Click the links in the Menu to explore topics related to our trip.</p>
+        <h2>Exploring Further <span class="badge badge-secondary">New</span></h2>
+        <p>Below are just a few resources to get you started if you're thinking of planning your own trip to Italy.</p>
+        <div class="list-group">
+            <a href="https://www.ricksteves.com/europe/italy" target="_blank" class="list-group-item list-group-item-action">Rick Steve's Audio Tours</a>
+            <a href="https://www.accuweather.com/en/it/italy-weather" target="_blank" class="list-group-item list-group-item-action">Italy's Weather</a>
+            <a href="https://en.wikipedia.org/wiki/Italy" target="_blank" class="list-group-item list-group-item-action">Italy Wikipedia</a>
+        </div>
+        <br>
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            <strong>Check back soon!</strong> More updates are being added every day!
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    </div>
+
+
+
+<!--    <img src="dog400.jpg"-->
+<!--         sizes="(min-width: 600px) 25vw,-->
+<!--            (min-width: 400px) 50vw,-->
+<!--            100vw"-->
+<!--         srcset="dog200.jpg 200w,-->
+<!--             dog400.jpg 400w,-->
+<!--             dog800.jpg 800w">-->
+
+<!--    <img src="https://s3-us-west-2.amazonaws.com/static-resources.zybooks.com/singer_150.jpg"-->
+<!--         srcset="https://s3-us-west-2.amazonaws.com/static-resources.zybooks.com/singer_300.jpg 2x, https://s3-us-west-2.amazonaws.com/static-resources.zybooks.com/singer_450.jpg 3x"-->
+<!--         alt="Singer" width="150">-->
+
+</main>
+
+<!-- Footer -->
+<footer class="navbar navbar-expand-md navbar-dark bg-light justify-content-center fixed-bottom">
+    <div class="row">
+        <div class="col-12 col-md">
+            <small class="d-block mb-3 text-muted">&copy; 2019 - Steven Weith</small>
+        </div>
+        <div class="col-6 col-md">
+            <ul class="list-unstyled text-small">
+                <li><a class="text-muted" href="index.html">Home</a></li>
             </ul>
-        <h3>More updates coming soon!</h3>
-    </main>
-
-    <footer>
-        <p>&copy; 2019 - Steven Weith</p>
-    </footer>
-
+        </div>
+        <div class="col-6 col-md">
+            <ul class="list-unstyled text-small">
+                <li><a class="text-muted" href="about.html">About</a></li>
+            </ul>
+        </div>
+        <div class="col-6 col-md">
+            <ul class="list-unstyled text-small">
+                <li><a class="text-muted" href="attractions.html">Attractions</a></li>
+            </ul>
+        </div>
+        <div class="col-6 col-md">
+            <ul class="list-unstyled text-small">
+                <li><a class="text-muted" href="cities.html">Cities</a></li>
+            </ul>
+        </div>
+        <div class="col-6 col-md">
+            <ul class="list-unstyled text-small">
+                <li><a class="text-muted" href="food.html">Food</a></li>
+            </ul>
+        </div>
+        <div class="col-6 col-md">
+            <ul class="list-unstyled text-small">
+                <li><a class="text-muted" href="hotels.html">Hotels</a></li>
+            </ul>
+        </div>
+        <div class="col-6 col-md">
+            <ul class="list-unstyled text-small">
+                <li><a class="text-muted" href="itinerary.html">Itinerary</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+<!-- /.container -->
+<!-- jQuery, Popper.js, Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
