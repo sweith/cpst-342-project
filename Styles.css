@@ -1,0 +1,23 @@
+body {
+  padding-top: 5rem;
+}
+
+.stylesheet {
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+
+p {
+  font-family: Arial;
+  font-size: 12pt;
+  font-weight: bold;
+}
+
+h1 {
+  text-decoration: none;
+}
+h1:hover {
+  color: darkred;
+}
+
+/*# sourceMappingURL=Styles.css.map */

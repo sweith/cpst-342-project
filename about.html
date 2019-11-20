@@ -23,10 +23,32 @@
                 font-size: 3.5rem;
             }
         }
+
+        main, body, html {
+            height: 100%;
+        }
+
+        .hero-image {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Images/selfie.jpeg");
+            height: 50%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+
+        .hero-text {
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+        }
     </style>
 
     <!-- Custom styles for this template -->
-    <link href="stylesheet.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
 </head>
 <body>
 
@@ -67,14 +89,18 @@
 <!-- Main -->
 <main role="main" class="container">
 
+    <div class="hero-image">
+        <div class="hero-text">
+            <h1>About Us</h1>
+        </div>
+    </div>
+
     <div class="stylesheet">
-        <h1>About Us</h1>
+        <h2>Our Timeline</h2>
         <p class="lead">We were “matched” on the dating app Bumble on July 26, 2016 and our first date was a picnic in Lincoln Park on August 6.
             On August 5, 2018, Steve re-created our first date in Lincoln Park to get down on one knee and propose.
             We were married July 20, 2019 and we spent our honeymoon in Italy from October 23 to November 2, 2019.</p>
     </div>
-
-    <img src="Images/selfie.jpeg" width="511" alt="Emily & Steve"/>
 
     <!--    <img src="dog400.jpg"-->
     <!--         sizes="(min-width: 600px) 25vw,-->

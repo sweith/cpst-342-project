@@ -23,10 +23,32 @@
                 font-size: 3.5rem;
             }
         }
+
+        main, body, html {
+            height: 100%;
+        }
+
+        .hero-image {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Images/restaurant.jpeg");
+            height: 50%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+
+        .hero-text {
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+        }
     </style>
 
     <!-- Custom styles for this template -->
-    <link href="stylesheet.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
 </head>
 <body>
 
@@ -67,8 +89,14 @@
 <!-- Main -->
 <main role="main" class="container">
 
+    <div class="hero-image">
+        <div class="hero-text">
+            <h1>Food</h1>
+        </div>
+    </div>
+
     <div class="stylesheet">
-        <h1>Food</h1>
+        <h2>Eat & Drink</h2>
         <p class="lead">Under construction...
             <br>Check back soon!</p>
     </div>

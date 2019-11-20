@@ -1,0 +1,23 @@
+body {
+  padding-top: 5rem;
+}
+
+.stylesheet {
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+
+p {
+  font: {
+    family: Arial;
+    size: 12pt;
+    weight: bold;
+  }
+}
+
+h1 {
+  text-decoration: none;
+  &:hover {
+    color: darkred;
+  }
+}

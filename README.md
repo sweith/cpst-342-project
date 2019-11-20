@@ -19,6 +19,9 @@ https://getbootstrap.com/docs/4.3/examples/product/
 Hero:
 https://www.w3schools.com/howto/howto_css_hero_image.asp
 
+Forms:
+https://getbootstrap.com/docs/4.3/components/forms/
+
 _3 bootstrap components can be found in index.html:_
 
 Dismissing:
